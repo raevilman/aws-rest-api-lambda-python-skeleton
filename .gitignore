@@ -1,0 +1,4 @@
+.idea
+venv
+lambda_build.zip
+__pycache__
