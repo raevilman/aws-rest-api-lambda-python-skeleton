@@ -1,8 +1,8 @@
 ### Skeleton project for AWS Lambda - Python
 
 **NOTE:**   
-[1] _boto3 related functionality isn't tested, as I was exporting the zip only._  
-[2] _Change the lib folder path in manage.py. Currently set to venv folder of pycharm_
+1. _boto3 related functionality isn't tested, as I was exporting the zip only._  
+2. _Change the lib folder path in manage.py. Currently set to venv folder of pycharm_  
 
 | File name | Purpose |
 | :---     |  :---
