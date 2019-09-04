@@ -129,15 +129,16 @@ def zip_update_function():
 
 
 if __name__ == "__main__":
-    if len(sys.argv) != 2:
-        print('Invalid option')
-    elif sys.argv[1] == 'create':
-        zip_create_function()
-    elif sys.argv[1] == 'update':
-        zip_update_function()
-    elif sys.argv[1] == 'archive':
-        archive()
-    elif sys.argv[1] == 'export_archive':
-        export_archive()
-    else:
-        print('Invalid option')
+    # if len(sys.argv) != 2:
+    #     print('Invalid option')
+    # elif sys.argv[1] == 'create':
+    #     zip_create_function()
+    # elif sys.argv[1] == 'update':
+    #     zip_update_function()
+    # elif sys.argv[1] == 'archive':
+    #     archive()
+    # elif sys.argv[1] == 'export_archive':
+    #     export_archive()
+    # else:
+    #     print('Invalid option')
+    export_archive()
