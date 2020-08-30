@@ -11,7 +11,7 @@ lib_path = 'venv/Lib/site-packages'
 def should_include(file_dir, file):
     if(
             str(file_dir).endswith('egg-info')
-            or str(file_dir).endswith('dist-info')
+            # or str(file_dir).endswith('dist-info')
             or str(file_dir).startswith(os.path.join(lib_path, 'pip'))
             or str(file_dir).__contains__('__pycache__')
             or (str(file).startswith('setuptools') and str(file).endswith('egg'))
@@ -46,7 +46,7 @@ def export_archive():
     # pkg = buf.read()
     # return pkg
     # writing files to a zipfile
-    with ZipFile('lambda_build.zip', 'w') as zip:
+    with ZipFile('lambda_build.zip', 'w', ZIP_DEFLATED) as zip:
         zip.write('lambda_function.py')
         # writing each file one by one
         for file in file_paths:
